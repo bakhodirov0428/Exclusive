@@ -26,10 +26,10 @@ const Header = () => {
                   ShopNow
                 </Link>
               </div>
-              <DropdownMenu.Root>
+              {/* <DropdownMenu.Root>
                 <DropdownMenu.Trigger asChild>
                   <button className="font-sans text-white font-normal text-sm flex items-center gap-1">
-                    English
+                    Language
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
@@ -44,17 +44,35 @@ const Header = () => {
                     </svg>
                   </button>
                 </DropdownMenu.Trigger>
-              </DropdownMenu.Root>
+                <DropdownMenu.Portal>
+                  <DropdownMenu.Content
+                    className=" bg-white rounded-md p-4 shadow-[0px_10px_38px_-10px_rgba(22,_23,_24,_0.35),_0px_10px_20px_-15px_rgba(22,_23,_24,_0.2)] will-change-[opacity,transform] data-[side=top]:animate-slideDownAndFade data-[side=right]:animate-slideLeftAndFade data-[side=bottom]:animate-slideUpAndFade data-[side=left]:animate-slideRightAndFade"
+                    sideOffset={5}
+                  >
+                    <DropdownMenu.Item className="font-sans text-black cursor-pointer font-normal text-sm">
+                      English
+                    </DropdownMenu.Item>
+                    <DropdownMenu.Item className="font-sans text-black cursor-pointer font-normal text-sm">
+                      Russian
+                    </DropdownMenu.Item>
+                    <DropdownMenu.Item className="font-sans text-black cursor-pointer font-normal text-sm">
+                      O'zbek
+                    </DropdownMenu.Item>
+                  </DropdownMenu.Content>
+                </DropdownMenu.Portal>
+              </DropdownMenu.Root> */}
             </div>
           </div>
         </div>
         <div className="bg-white">
           <nav className="flex pt-[47px] pb-4 items-center container justify-between">
-            <Image src={logo} alt="" />
+            <Link href="/">
+              <Image src={logo} alt="" />
+            </Link>
             <ul className="flex items-center gap-12">
               <li className="">
                 <Link
-                  href="#"
+                  href="/"
                   className="font-sans text-base font-normal text-black"
                 >
                   Home
